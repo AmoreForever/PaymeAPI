@@ -1,8 +1,7 @@
 from setuptools import setup
 
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 
-req = ['requests']
 
 setup(
     name="PaymeAPI",
@@ -12,5 +11,5 @@ setup(
     url="https://github,com/AmoreForever/PaymeAPI",
     author_email='me.thefarkhodov@gmail.com',
     license="MIT",
-    requires=req
+    requires=["requests"]
 )

@@ -9,11 +9,11 @@ pip install PaymeAPI
 
 <h1>Usage</h1>
 
-To use PaymeAPI, first import the <code>PaymeAPI</code> class from the <code>payme</code> package:
+To use PaymeAPI, first import the <code>PaymeAPI</code> class from the <code>PaymeAPI</code> package:
 
 <pre lang="python">
 # Import lib
-from payme import Payme
+from PaymeAPI import Payme
 # Create a client instance with your card ID
 client = Payme(mycard=' ')
 
