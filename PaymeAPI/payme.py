@@ -10,6 +10,8 @@
                       
 import requests
 
+__all__ = ["Payme"]
+
 class Payme:
     headers = {'device': '6Fk1rB', 'user-agent': 'Mozilla/57.36'}
 
