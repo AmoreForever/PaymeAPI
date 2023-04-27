@@ -55,10 +55,14 @@ class Payme:
             return {'ok': False, 'error': f'HTTP error {response.status_code}'}
 
         data = response.json()
-        cheque = data.get("result", {}).get("cheque", {})
+        cheque = data['result']['cheque']['pay_time']
+        recipient = data['result']['cheque']['account'][1]['value']
+        org = data['result']['cheque']['merchant']['organization']
         return {
             'ok': True,
+            'org': org,
+            'recipient': recipient,
             'payment': 'successfully'
-            if bool(cheque.get('pay_time'))
+            if bool(cheque)
             else 'unsuccessfully',
         }
