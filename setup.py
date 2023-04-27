@@ -6,6 +6,7 @@ __version__ = "1.0.4"
 setup(
     name="PaymeAPI",
     version=__version__,
+    keywords=["payme", "paymeapi", "paymeapiuz", "paymeuz"],
     description="Easy and convenient library to create receipts and check the status of the created receipt for https://payme.uz/",
     author="AmoreForever",
     url="https://github.com/AmoreForever/PaymeAPI",

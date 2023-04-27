@@ -1,1 +1,1 @@
-from .PaymeAPI import Payme #
+from .PaymeAPI import Payme
